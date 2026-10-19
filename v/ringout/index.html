@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" data-store="soon">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ring-Out Chess: What if you could shove chess pieces off the board?</title>
+<meta name="description" content="What if you could shove chess pieces off the board? Move into an enemy and you shove it one square back. No captures. Play Ring-Out Chess against the AI in What If Chess: Crazy Variants.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#dde4da" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1412" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://clausewl.github.io/whatifchess/v/ringout/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="What If Chess: Crazy Variants">
+<meta property="og:title" content="Ring-Out Chess: What if you could shove chess pieces off the board?">
+<meta property="og:description" content="What if you could shove chess pieces off the board? Move into an enemy and you shove it one square back. No captures. Play Ring-Out Chess against the AI in What If Chess: Crazy Variants.">
+<meta property="og:url" content="https://clausewl.github.io/whatifchess/v/ringout/">
+<meta property="og:image" content="https://clausewl.github.io/whatifchess/assets/v/ringout-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/site.css">
+<script src="../../assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap top">
+  <a class="brand" href="../../" aria-label="What If Chess: Crazy Variants, home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path class="flask-liquid" d="M12.5 33 L35.5 33 L41 42.5 Q42 45 39 45 H9 Q6 45 7 42.5 Z"/><path d="M18 4 h12 M20 4 v15 L7 42.5 Q5.6 45.5 9 45.5 H39 Q42.4 45.5 41 42.5 L28 19 V4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><circle class="bub b1" cx="22" cy="38" r="2.2"/><circle class="bub b2" cx="28" cy="40" r="1.5"/><circle class="bub b3" cx="25" cy="27" r="1.6"/></svg><span class="brand-text"><span class="eyebrow">The What-If Lab</span><span class="brand-name">What If Chess</span></span></a>
+  <nav class="nav" aria-label="Site">
+    <a href="../../#experiments">Experiments</a>
+    <a class="when-soon" href="../../#testflight">TestFlight</a>
+    <a class="when-live" href="https://apps.apple.com/app/id6824511743" data-appstore="nav">App Store</a>
+    <a href="../../support/">Support</a>
+  </nav>
+</header>
+<main id="main" class="wrap">
+  <a class="crumb" href="../../">← The What-If Lab</a>
+  <div class="v-hero">
+    <div class="v-visual">
+      <div class="loop-frame" style="--acc:#E39B3B"><img src="../../assets/v/ringout.jpg" width="720" height="720" decoding="async" alt="Ring-Out Chess: A chain of three pieces sliding and pushing out a queen."></div>
+      <p class="caption">A real game, replayed from our balance arena: a chain of three pieces sliding and pushing out a queen.</p>
+    </div>
+    <div class="v-info">
+      <div><p class="eyebrow">Experiment 10 · Ring-Out Chess</p><h1 class="disp">What if you could shove chess pieces off the board?</h1></div>
+      <ol class="steps" style="--acc:#E39B3B">
+      <li>Move into an enemy and you shove it one square back. No captures.</li>
+      <li>Lines slide like dominoes. Whatever leaves the board is out.</li>
+      <li>First to push out six wins. No ring-out for 20 rounds? The ring shrinks.</li>
+      </ol>
+      <div class="panel deal" style="--acc:#E39B3B">
+        <p><b class="when-soon">Coming to iPhone.</b> Part of Lab Pass. Try it first in its free interactive tutorial.</p>
+        <div class="cta-row">
+          <a class="go when-soon" href="../../?v=ringout#testflight" data-keep-src>Join the TestFlight list</a>
+          <a class="go when-live" href="https://apps.apple.com/app/id6824511743" data-appstore="ringout">Get it for iPhone</a>
+          <a class="btn when-live" href="whatifchess://play/ringout" data-deeplink>Have the app? Open Ring-Out Chess</a>
+        </div>
+        <p class="fine">Against an AI with three levels, or Pass &amp; Play on one phone.</p>
+      </div>
+      <details class="rules">
+        <summary>Full rules</summary>
+        <h3>The twist</h3>
+        <ol>
+        <li>Pieces move normally. A move that would capture becomes a push: your piece takes the square and the enemy piece is shoved one square further along your move&#x27;s direction (a knight pushes along its long leg). Pawns push only diagonally.</li>
+        <li>Chain: if more pieces stand behind the pushed one (any color), the whole line slides one square. The piece at the end that would leave the board is out of the ring.</li>
+        <li>Kings are too heavy to push: a push whose line contains a king is illegal. Kings are walls.</li>
+        <li>Win by pushing out 6 enemy pieces (pawns count). Own goals count: if your own piece falls off the end of your line, the point goes to your opponent.</li>
+        <li>If 20 rounds pass with no ring-out, the ring shrinks by one square on every side (8×8 → 6×6 → 4×4 → 2×2). Everything left outside is out and scores for the opponent; a king caught outside loses. If a shrink catches both kings, or takes both players to 6 or more, the higher score wins; if the scores are tied, the bigger army wins (at least a pawn&#x27;s worth ahead), otherwise it&#x27;s a draw.</li>
+        <li>No en passant. A pawn that pushes onto the last rank promotes; a piece pushed there stays what it is.</li>
+        </ol>
+        <h3>Base rules (every experiment)</h3>
+        <ul>
+        <li>Pieces move like normal chess.</li>
+        <li>No check, no checkmate: capture the enemy king to win.</li>
+        <li>Castling only needs an unmoved king and rook and an empty path.</li>
+        <li>50 rounds without a capture, pawn move or destruction? The bigger army wins (equal armies: draw). Same after 150 rounds.</li>
+        </ul>
+      </details>
+      <p class="credit">Inspired by push chess variants.</p>
+    </div>
+  </div>
+  <section class="section" aria-labelledby="more-h">
+    <div class="section-head"><p class="eyebrow">More experiments</p><h2 class="disp" id="more-h">Try another what-if</h2></div>
+    <div class="more">
+    <a class="spec" href="../../v/hotpotato/" style="--acc:#FFB800">
+      <span class="spec-top"><span class="hole"></span><span class="code">EXP-01</span><span class="chip chip-free">Free</span></span>
+      <picture><source srcset="../../assets/v/hotpotato.webp" type="image/webp"><img src="../../assets/v/hotpotato.jpg" alt="" width="720" height="720" loading="lazy" decoding="async"></picture>
+      <p class="spec-name">Hot Potato Chess</p>
+      <p class="spec-q">What if you had to pass a ticking bomb?</p>
+    </a>
+    <a class="spec" href="../../v/meteor/" style="--acc:#FF5A1F">
+      <span class="spec-top"><span class="hole"></span><span class="code">EXP-02</span></span>
+      <picture><source srcset="../../assets/v/meteor.webp" type="image/webp"><img src="../../assets/v/meteor.jpg" alt="" width="720" height="720" loading="lazy" decoding="async"></picture>
+      <p class="spec-name">Meteor Chess</p>
+      <p class="spec-q">What if meteors fell on the board?</p>
+    </a>
+    <a class="spec" href="../../v/battleroyale/" style="--acc:#8B6CFF">
+      <span class="spec-top"><span class="hole"></span><span class="code">EXP-03</span></span>
+      <picture><source srcset="../../assets/v/battleroyale.webp" type="image/webp"><img src="../../assets/v/battleroyale.jpg" alt="" width="720" height="720" loading="lazy" decoding="async"></picture>
+      <p class="spec-name">Battle Royale Chess</p>
+      <p class="spec-q">What if chess was a battle royale?</p>
+    </a>
+    <a class="spec" href="../../v/laserrook/" style="--acc:#FF2D55">
+      <span class="spec-top"><span class="hole"></span><span class="code">EXP-04</span></span>
+      <picture><source srcset="../../assets/v/laserrook.webp" type="image/webp"><img src="../../assets/v/laserrook.jpg" alt="" width="720" height="720" loading="lazy" decoding="async"></picture>
+      <p class="spec-name">Laser Rook Chess</p>
+      <p class="spec-q">What if rooks had lasers?</p>
+    </a>
+    <a class="spec" href="../../v/dragonegg/" style="--acc:#2FBF71">
+      <span class="spec-top"><span class="hole"></span><span class="code">EXP-05</span></span>
+      <picture><source srcset="../../assets/v/dragonegg.webp" type="image/webp"><img src="../../assets/v/dragonegg.jpg" alt="" width="720" height="720" loading="lazy" decoding="async"></picture>
+      <p class="spec-name">Dragon Egg Chess</p>
+      <p class="spec-q">What if a dragon egg hatched on the board?</p>
+    </a>
+    <a class="spec" href="../../v/splat/" style="--acc:#FF5FB0">
+      <span class="spec-top"><span class="hole"></span><span class="code">EXP-06</span></span>
+      <picture><source srcset="../../assets/v/splat.webp" type="image/webp"><img src="../../assets/v/splat.jpg" alt="" width="720" height="720" loading="lazy" decoding="async"></picture>
+      <p class="spec-name">Splat Chess</p>
+      <p class="spec-q">What if pieces left paint everywhere?</p>
+    </a>
+    <a class="spec" href="../../v/fuse/" style="--acc:#B26BFF">
+      <span class="spec-top"><span class="hole"></span><span class="code">EXP-07</span></span>
+      <picture><source srcset="../../assets/v/fuse.webp" type="image/webp"><img src="../../assets/v/fuse.jpg" alt="" width="720" height="720" loading="lazy" decoding="async"></picture>
+      <p class="spec-name">Fuse Chess</p>
+      <p class="spec-q">What if two pieces fused into a monster?</p>
+    </a>
+    <a class="spec" href="../../v/rps/" style="--acc:#5FA83A">
+      <span class="spec-top"><span class="hole"></span><span class="code">EXP-08</span></span>
+      <picture><source srcset="../../assets/v/rps.webp" type="image/webp"><img src="../../assets/v/rps.jpg" alt="" width="720" height="720" loading="lazy" decoding="async"></picture>
+      <p class="spec-name">Rock Paper Scissors Chess</p>
+      <p class="spec-q">What if pieces were rock, paper, scissors?</p>
+    </a>
+    <a class="spec" href="../../v/icerink/" style="--acc:#5CC8F5">
+      <span class="spec-top"><span class="hole"></span><span class="code">EXP-09</span></span>
+      <picture><source srcset="../../assets/v/icerink.webp" type="image/webp"><img src="../../assets/v/icerink.jpg" alt="" width="720" height="720" loading="lazy" decoding="async"></picture>
+      <p class="spec-name">Ice Rink Chess</p>
+      <p class="spec-q">What if the board was frozen solid?</p>
+    </a>
+    </div>
+  </section>
+</main>
+<footer class="wrap foot">
+  <nav aria-label="Legal and support">
+    <a href="../../privacy/">Privacy</a>
+    <a href="../../terms/">Terms</a>
+    <a href="../../support/">Support</a>
+    <a href="../../ro/support/" hreflang="ro" lang="ro">Română</a>
+  </nav>
+  <p>What If Chess: Crazy Variants · The What-If Lab. From the same lab bench as DiceMate: Dice Chess and HandMate: Card Chess.</p>
+  <p>Variant ideas that have a history are credited on their experiment. App Store and iPhone are trademarks of Apple Inc.</p>
+  <p>© 2026 Clau SEWL</p>
+</footer>
+</body>
+</html>
