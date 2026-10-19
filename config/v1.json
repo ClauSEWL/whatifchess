@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "_comment": "Remote config for What If Chess (PROJECT.md v1.1 §10.4). Schema and rules: site/README.md. The 1.0 app reads featuredVariantID, status, free and paywallArm; it ignores every other key. Never add a date; never set a status to \"mvp\" for a variant that is not live in the shipped app (App Review 2.5.19).",
+  "featuredVariantID": "meteor",
+  "paywallArm": "A",
+  "status": {},
+  "seenOnTikTok": null,
+  "drops": [],
+  "sisterApps": {
+    "version": 1,
+    "apps": [
+      {
+        "id": "dicemate",
+        "name": "DiceMate: Dice Chess",
+        "appStoreID": 6822851483,
+        "symbol": "die.face.5.fill",
+        "colors": ["#5C3A21", "#291A0F"],
+        "tagline": {
+          "en": "Chess where the dice choose your pieces.",
+          "ro": "Șah în care zarurile îți aleg piesele."
+        }
+      },
+      {
+        "id": "handmate",
+        "name": "HandMate: Card Chess",
+        "appStoreID": 6822851393,
+        "symbol": "suit.spade.fill",
+        "colors": ["#1E2A4A", "#0B1020"],
+        "tagline": {
+          "en": "Chess where your hand of cards decides every move.",
+          "ro": "Șah în care mâna de cărți decide fiecare mutare."
+        }
+      }
+    ]
+  }
+}
